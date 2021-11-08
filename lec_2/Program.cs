@@ -1,12 +1,13 @@
-﻿void RandomFill(int[] array, int min, int max)
+﻿// Лекция 2. Работа с массивами: заполнение, вывод, поиск элемента
+
+void RandomFill(int[] array, int min, int max) // Заполняет массив значениями диапазона [min, max)
 {
     for (int i = 0; i < array.Length; ++i)
     {
         array[i] = new Random().Next(min, max);
     }
 }
-
-void Print(int[] array)
+void Print(int[] array) // Выводит массив на экран
 {
     for (int i = 0; i < array.Length; ++i)
     {
@@ -14,8 +15,7 @@ void Print(int[] array)
     }
     Console.WriteLine();
 }
-
-int Find(int[] array, int findNum)
+int Find(int[] array, int findNum) // Возвращает номер позиции элемента в массиве
 {
     for (int i = 0; i < array.Length; ++i)
     {
@@ -34,5 +34,5 @@ if (result != -1)
 }
 else
 {
-    Console.WriteLine("no matches");
+    Console.WriteLine("Нет совпадений");
 }
