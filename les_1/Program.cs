@@ -1,4 +1,6 @@
-﻿//float c = float.Parse(Console.ReadLine());
+﻿// Первый семинар: интересные примеры ввода-вывода, преобразования типов
+
+//float c = float.Parse(Console.ReadLine());
 //float f = c * 1.8f + 32;
 //Console.WriteLine(f);
 int i = 1;

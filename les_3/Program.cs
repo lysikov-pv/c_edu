@@ -1,17 +1,17 @@
-﻿int InpVar(string str)
+﻿int InpVar(string str) // Возращает значение введенное с клавиатуры
 {
     Console.Write(str);
     return Convert.ToInt32(Console.ReadLine());
 }
-int Max2(int a, int b)
+int Max2(int a, int b) // Возращает максимальное из двух
 {
     if (a > b) return a; else return b;
 }
-int Min2(int a, int b)
+int Min2(int a, int b) // Возращает минимальное из двух
 {
     if (a < b) return a; else return b;
 }
-int Max3(int a, int b, int c)
+int Max3(int a, int b, int c) // Возращает максимальное из трех
 {
     if (a > b)
     {
@@ -22,13 +22,13 @@ int Max3(int a, int b, int c)
         if (b > c) return b; else return c;
     }
 }
-int RandomVar(string str, int min, int max)
+int RandomVar(string str, int min, int max) // Возращает значение из диапазона [min;max) попутно выводя его на экран 
 {
     int x = new Random().Next(min, max);
     Console.WriteLine(str + x);
     return x;
 }
-int Sqrt(int a)
+int Sqrt(int a) // Возращает квадрат числа
 {
     return a * a;
 }

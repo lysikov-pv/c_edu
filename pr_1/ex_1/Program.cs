@@ -1,19 +1,17 @@
-﻿int GetN(string str)
+﻿int GetN(string str) // Ввод элемента
 {
     Console.Write(str + "= ");
     int x = int.Parse(Console.ReadLine());
     return x;
 }
-
-void RandomFill(int[] array, int min, int max)
+void RandomFill(int[] array, int min, int max) // Заполнение массива числами из диапазона [min;max)
 {
     for (int i = 0; i < array.Length; ++i)
     {
         array[i] = new Random().Next(min, max);
     }
 }
-
-void Print(int[] array)
+void Print(int[] array) // Вывод массива на экран
 {
     for (int i = 0; i < array.Length; ++i)
     {
@@ -21,8 +19,7 @@ void Print(int[] array)
     }
     Console.WriteLine();
 }
-
-int Find(int[] array, int findNum)
+int Find(int[] array, int findNum) // Возвращает номер элемента в массиве по значению
 {
     for (int i = 0; i < array.Length; ++i)
     {
@@ -30,8 +27,7 @@ int Find(int[] array, int findNum)
     }
     return -1;
 }
-
-int FindCount(int[] array, int findNum)
+int FindCount(int[] array, int findNum) // Считает количество вхождений элемента в массив
 {
     int count = 0;
     for (int i = 0; i < array.Length; ++i)
@@ -40,10 +36,8 @@ int FindCount(int[] array, int findNum)
     }
     return count;
 }
-
-int CountEllement(int[] array, int findNum)
+int CountEllement(int[] array, int findNum) // Считает сколько символов между 1 и последним вхождением элемента в массив
 {
-
     int first = -1;
     int last = -1;
     for (int i = 0; i < array.Length; ++i)
