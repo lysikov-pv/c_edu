@@ -34,7 +34,7 @@ int ParsIntToArray(int x, int[] arr) // Заполняет массив цифр
     return i;
 }
 
-int[] CreateArray(int n, int min, int max) // Возвращает массив длинной n заполненный числами из диапазона [0;100]
+int[] CreateArray(int n, int min, int max) // Возвращает массив длинной n заполненный числами из диапазона [min;max)
 {
     int[] a = new int[n];
     for (int i = 0; i < a.Length; ++i) a[i] = new Random().Next(min, max);
