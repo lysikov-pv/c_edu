@@ -195,7 +195,11 @@ do
                 int arrLength = ParsIntToArray(a, arr);
                 bool result = true;
                 for (int i = 0; i < arrLength / 2; i++)
+<<<<<<< HEAD
                     if (arr[i] != arr[arrLength - i - 1]) result = false;
+=======
+                    if(arr[i]!=arr[arrLength-i-1]) result = false;
+>>>>>>> 09d091f9a318565b0d1f52160415e7e6def7131b
                 if (result) Console.WriteLine("Число палиндром");
                 else        Console.WriteLine("Число не палиндром");
                 break;
