@@ -158,8 +158,8 @@ do
                     {
                         bool x = Convert.ToBoolean(ix);
                         bool y = Convert.ToBoolean(iy);
-                        bool result = (!(x || y) == !x && !y);
-                        if (result) count++;
+                        bool result = (!(x || y) == (!x && !y));
+                        if (!result) count++;
                         Console.WriteLine($"X  = {x}, Y = {y}, выражение: {result}");
                     }
                 if (count == 0) Console.WriteLine("Итог: Для всех сочетаний X и Y выражение истинно");
