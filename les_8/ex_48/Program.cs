@@ -79,7 +79,7 @@ Console.Clear();
     int n = 5;
     int m = 7;
     Console.WriteLine("Тест 5");
-    int[,] tstArr = FillRandomArray(new int[m, n], -100, 101); // создаем массив, передаем его в метод, затем в ссылку массива tstArr записываем ссылку на область возращаемую методом
+    int[,] tstArr = FillRandomArray(new int[m, n], -100, 101); // создаем и передаем ссылку на массив внутри вызова метода, затем ссылке на массив tstArr присваеваем ссылку на область возращаемую методом
     PrintArray(tstArr, preStr: "Массив: \n");
 }
 
@@ -88,7 +88,7 @@ Console.Clear();
     int m = 3;
     Console.WriteLine("Тест 6");
     int[,] tstArr = new int[m, n]; // Создаем массив
-    FillRandomArray(tstArr, -100, 101); // Передаем ссылку на массив и в указанной области заполняет массив
+    FillRandomArray(tstArr, -100, 101); // Передаем ссылку на массив и в указанной области метод заполняет массив
     PrintArray(tstArr, preStr: "Массив: \n");
 }
 
