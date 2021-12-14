@@ -1,11 +1,11 @@
 ﻿// 73. Написать программу показывающие первые N чисел, для которых каждое следующее равно сумме двух предыдущих. Первые два элемента последовательности задаются пользователем
 
-void Printsequence(int first, int second, int n)
+void PrintSequence(int first, int second, int n)
 {
     if (n < 1) return;
     int nextNumber = first + second;
     Console.Write($"{nextNumber} ");
-    Printsequence(first: second, second: nextNumber, n: n - 1);
+    PrintSequence(first: second, second: nextNumber, n: n - 1);
 }
 
 Console.Clear();
@@ -16,7 +16,7 @@ Console.Clear();
     int second = 5;
     int n = 10;
     Console.Write($"{first} {second} ");
-    Printsequence(first, second, n);
+    PrintSequence(first, second, n);
 }
 
 {   // Тест 1
@@ -25,5 +25,5 @@ Console.Clear();
     int second = 2;
     int n = 20;
     Console.Write($"{first} {second} ");
-    Printsequence(first, second, n);
+    PrintSequence(first, second, n);
 }
